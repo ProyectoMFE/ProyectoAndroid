@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/fragment_slideshow.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/fragment_slideshow.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/fragment_gallery.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/app_bar_equipos.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/app_bar_equipos.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/content_equipos.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/content_equipos.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/activity_equipos.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/activity_equipos.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/fragment_home.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/nav_header_equipos.xml",
+        "source": "com.example.proyectodesdecero.app-main-45:/layout/nav_header_equipos.xml"
+    }
+]
