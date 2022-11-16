@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.home.HomeFragment">
 
 
     <TextView
@@ -106,5 +106,6 @@
         app:layout_constraintEnd_toStartOf="@+id/textoModificar"
         app:layout_constraintStart_toEndOf="@+id/textoEstado"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
