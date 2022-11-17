@@ -1,23 +1,22 @@
 package com.example.prueba23.ui.equipos;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.prueba23.R;
+import com.example.prueba23.entities.Dispositivo;
 
 import java.util.ArrayList;
 
 public class adapterEquipos extends RecyclerView.Adapter<adapterEquipos.VistaHolder>{
 
-    private ArrayList<claseEquipo> mDataSet;
+    private ArrayList<Dispositivo> mDataSet;
 
     // Obtener referencias de los componentes visuales para cada elemento
     // Es decir, referencias de los EditText, TextViews, Buttons
@@ -43,7 +42,7 @@ public class adapterEquipos extends RecyclerView.Adapter<adapterEquipos.VistaHol
     }
 
     // Este es nuestro constructor (puede variar según lo que queremos mostrar)
-    public adapterEquipos(ArrayList<claseEquipo> myDataSet) {
+    public adapterEquipos(ArrayList<Dispositivo> myDataSet) {
         mDataSet = myDataSet;
     }
 
@@ -54,7 +53,7 @@ public class adapterEquipos extends RecyclerView.Adapter<adapterEquipos.VistaHol
                                                    int viewType) {
         // Creamos una nueva vista
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.elementolista, parent, false);
+                .inflate(R.layout.elementolistaequipos, parent, false);
         return new VistaHolder(v);
     }
 
@@ -65,12 +64,15 @@ public class adapterEquipos extends RecyclerView.Adapter<adapterEquipos.VistaHol
     public void onBindViewHolder(@NonNull adapterEquipos.VistaHolder holder, int position) {
         // - obtenemos un elemento del dataset según su posición
         // - reemplazamos el contenido usando tales datos
-        claseEquipo equipo = mDataSet.get(position);
-        holder.dispositivo.setText(equipo.dispositivos.isEmpty() ? "" :  equipo.dispositivos);
-        holder.marca.setText(equipo.marca.isEmpty() ? "" :  equipo.marca);
-        holder.modelo.setText(equipo.modelo.isEmpty() ? "" :  equipo.modelo);
-        holder.estado.setText(equipo.estado.isEmpty() ? "" :  equipo.estado);
-        holder.localizacion.setText(equipo.localizacion.isEmpty() ? "" :  equipo.localizacion);
+        Dispositivo equipo = mDataSet.get(position);
+
+        // Hay que activar cuando tenga la conexion a la api y tengo que recibir la categoria
+        // holder.dispositivo.setText(equipo.getIdCategoria().isEmpty() ? "" :  equipo.getIdCategoria());
+        holder.dispositivo.setText("Categoria");
+        holder.marca.setText(equipo.getMarca().isEmpty() ? "" :  equipo.getMarca());
+        holder.modelo.setText(equipo.getModelo().isEmpty() ? "" :  equipo.getModelo());
+        holder.estado.setText(equipo.getEstado().isEmpty() ? "" :  equipo.getEstado());
+        holder.localizacion.setText(equipo.getLocalizacion().isEmpty() ? "" :  equipo.getLocalizacion());
 
         holder.boton.setText("Reservar");
 

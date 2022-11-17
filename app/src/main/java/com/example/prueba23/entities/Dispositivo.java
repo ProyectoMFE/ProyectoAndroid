@@ -17,6 +17,14 @@ public class Dispositivo {
         this.idCategoria = 0;
     }
 
+    public Dispositivo(String numSerie, String marca, String modelo, String localizacion, String estado) {
+        this.numSerie = numSerie;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.localizacion = localizacion;
+        this.estado = estado;
+    }
+
     public String getNumSerie() {
         return numSerie;
     }

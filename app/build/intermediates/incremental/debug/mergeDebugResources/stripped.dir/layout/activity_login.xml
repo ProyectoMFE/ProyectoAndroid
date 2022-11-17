@@ -112,11 +112,22 @@
         app:cornerRadius="5dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/checkboxGuardarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="13dp"
+        android:text="Guardar Sesion"
+        app:layout_constraintBottom_toTopOf="@+id/botonLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

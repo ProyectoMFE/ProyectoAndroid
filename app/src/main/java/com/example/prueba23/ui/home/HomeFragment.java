@@ -7,26 +7,65 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.prueba23.R;
 import com.example.prueba23.databinding.FragmentHomeBinding;
+import com.example.prueba23.entities.Dispositivo;
+import com.example.prueba23.ui.equipos.adapterEquipos;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    FragmentHomeBinding binding;
+
+    // esto es para mostrar lo de las listas
+    private RecyclerView mRecyclerView;
+    private adapterPrestamos adapterPrestamos;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        //HomeViewModel homeViewModel =
-         //       new ViewModelProvider(this).get(HomeViewModel.class);
+            new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-       // final TextView textView = binding.textHome;
-       // homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        mRecyclerView = root.findViewById(R.id.recyclerViewPrestamos);
+
         return root;
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        // RecyclerView imageView = (RecyclerView) getView().findViewById(R.id.recyclerView);
+
+        // Esto no es necesario se puede eliminar pero mejora el rendimiento.
+
+
+        // Nuestro RecyclerView usará un linear layout manager
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        mRecyclerView.setLayoutManager(layoutManager);
+
+        // Asociamos un adapter (ver más adelante cómo definirlo)
+
+        ArrayList<Dispositivo> listaEquipos = new ArrayList<>();
+
+        Dispositivo equipo = new Dispositivo("1","2","3","4","5");
+        listaEquipos.add(equipo);
+        equipo = new Dispositivo("2","2","3","4","5");
+        listaEquipos.add(equipo);
+        equipo = new Dispositivo("3","2","3","4","5");
+        listaEquipos.add(equipo);
+        equipo = new Dispositivo("4","2","3","4","5");
+
+        listaEquipos.add(equipo);
+        adapterPrestamos = new adapterPrestamos(listaEquipos);
+        mRecyclerView.setAdapter(adapterPrestamos);
     }
 
     @Override

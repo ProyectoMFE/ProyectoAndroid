@@ -1,162 +1,166 @@
 [
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable-v24_fondodegradado.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable-v24\\fondodegradado.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_botontoobal.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/botontoobal.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_ic_menu_camera.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\ic_menu_camera.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_fondobotontoolbar.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\fondobotontoolbar.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable-v24_comercio.png.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable-v24\\comercio.png"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_comerciologo.png.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/comerciologo.png"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_activity_main.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\navigation_mobile_navigation.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\navigation\\mobile_navigation.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable-v24_comercio.png.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable-v24/comercio.png"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_comerciologo.png.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\comerciologo.png"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_ic_menu_slideshow.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/ic_menu_slideshow.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_ic_menu_gallery.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/ic_menu_gallery.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_activity_login.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\activity_login.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/menu_activity_main_drawer.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/menu/activity_main_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\activity_main.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_elementolista.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\elementolista.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/xml_backup_rules.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_botontoobal.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\botontoobal.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_content_main.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\content_main.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable-v24_botonredondeado.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable-v24/botonredondeado.xml"
     },
     {
         "merged": "com.example.prueba23.app-merged_res-43:/layout_fragment_equipos.xml.flat",
         "source": "com.example.prueba23.app-main-45:/layout/fragment_equipos.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_ic_menu_gallery.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\ic_menu_gallery.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_elemetolistaprestamos.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/elemetolistaprestamos.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\menu_main.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\menu\\main.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_app_bar_main.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/app_bar_main.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable-v24_botonredondeado.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable-v24\\botonredondeado.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/navigation/mobile_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_fragment_home.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_fondobotontoolbar.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/fondobotontoolbar.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_ic_menu_slideshow.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\ic_menu_slideshow.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_fragment_equipos.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_equipos.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_side_nav_bar.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/side_nav_bar.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_fragment_slideshow.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_slideshow.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_fragment_gallery.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_gallery.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/menu_main.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/menu/main.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\xml\\backup_rules.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_elementolistaequipos.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/elementolistaequipos.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_home.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable-v24_fondodegradado.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable-v24/fondodegradado.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_nav_header_main.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\nav_header_main.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.prueba23.app-pngs-38:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_fragment_gallery.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/fragment_gallery.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-pngs-38:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_elementolistasolicitudes.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/elementolistasolicitudes.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\drawable_side_nav_bar.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\drawable\\side_nav_bar.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_nav_header_main.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/nav_header_main.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_fragment_slideshow.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/fragment_slideshow.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\menu_activity_main_drawer.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\menu\\activity_main_drawer.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/layout_content_main.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/layout/content_main.xml"
     },
     {
-        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-merged_res-43:\\layout_app_bar_main.xml.flat",
-        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\app_bar_main.xml"
+        "merged": "com.example.prueba23.app-merged_res-43:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.prueba23.app-main-45:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.prueba23.app-merged_res-43:/drawable_ic_menu_camera.xml.flat",
+        "source": "com.example.prueba23.app-main-45:/drawable/ic_menu_camera.xml"
     }
 ]

@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.example.prueba23.R;
 import com.example.prueba23.databinding.FragmentEquiposBinding;
 import com.example.prueba23.databinding.FragmentGalleryBinding;
+import com.example.prueba23.entities.Dispositivo;
 
 import java.util.ArrayList;
 
@@ -31,12 +32,7 @@ public class equipos extends Fragment {
     private RecyclerView mRecyclerView;
     private adapterEquipos  adapterEquipos;
 
-    private static final String[] myDataSet = {
-            "PHP",
-            "Javascript",
-            "Go",
-            "Python"
-    };
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -62,15 +58,15 @@ public class equipos extends Fragment {
 
         // Asociamos un adapter (ver más adelante cómo definirlo)
 
-        ArrayList<claseEquipo> listaEquipos = new ArrayList<>();
+        ArrayList<Dispositivo> listaEquipos = new ArrayList<>();
 
-        claseEquipo equipo = new claseEquipo("1","2","3","4","5");
+        Dispositivo equipo = new Dispositivo("1","2","3","4","5");
         listaEquipos.add(equipo);
-        equipo = new claseEquipo("2","2","3","4","5");
+        equipo = new Dispositivo("2","2","3","4","5");
         listaEquipos.add(equipo);
-        equipo = new claseEquipo("3","2","3","4","5");
+        equipo = new Dispositivo("3","2","3","4","5");
         listaEquipos.add(equipo);
-        equipo = new claseEquipo("4","2","3","4","5");
+        equipo = new Dispositivo("4","2","3","4","5");
 
         listaEquipos.add(equipo);
          adapterEquipos = new adapterEquipos(listaEquipos);

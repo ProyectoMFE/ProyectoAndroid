@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,6 +27,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button botonLogin;
 
   @NonNull
+  public final CheckBox checkboxGuardarSesion;
+
+  @NonNull
   public final EditText editTextTextPassword;
 
   @NonNull
@@ -41,10 +45,12 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView textView5;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button botonLogin,
-      @NonNull EditText editTextTextPassword, @NonNull EditText inputUsuarios,
-      @NonNull ImageView logoLogin, @NonNull TextView textView4, @NonNull TextView textView5) {
+      @NonNull CheckBox checkboxGuardarSesion, @NonNull EditText editTextTextPassword,
+      @NonNull EditText inputUsuarios, @NonNull ImageView logoLogin, @NonNull TextView textView4,
+      @NonNull TextView textView5) {
     this.rootView = rootView;
     this.botonLogin = botonLogin;
+    this.checkboxGuardarSesion = checkboxGuardarSesion;
     this.editTextTextPassword = editTextTextPassword;
     this.inputUsuarios = inputUsuarios;
     this.logoLogin = logoLogin;
@@ -85,6 +91,12 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.checkboxGuardarSesion;
+      CheckBox checkboxGuardarSesion = ViewBindings.findChildViewById(rootView, id);
+      if (checkboxGuardarSesion == null) {
+        break missingId;
+      }
+
       id = R.id.editTextTextPassword;
       EditText editTextTextPassword = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPassword == null) {
@@ -115,8 +127,9 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, botonLogin, editTextTextPassword,
-          inputUsuarios, logoLogin, textView4, textView5);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, botonLogin,
+          checkboxGuardarSesion, editTextTextPassword, inputUsuarios, logoLogin, textView4,
+          textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2817,6 +2817,7 @@ id chain
 id chain2
 id chains
 id checkbox
+id checkboxGuardarSesion
 id checked
 id chronometer
 id circle_center
@@ -3069,6 +3070,8 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id recyclerViewPrestamos
+id recyclerViewSolicitudes
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3361,7 +3364,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout elementolista
+layout elementolistaequipos
+layout elementolistasolicitudes
+layout elemetolistaprestamos
 layout fragment_equipos
 layout fragment_gallery
 layout fragment_home

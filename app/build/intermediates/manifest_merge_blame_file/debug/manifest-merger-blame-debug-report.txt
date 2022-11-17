@@ -6,110 +6,110 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml
+8-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml
+9-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:5:5-40:19
+11-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:5:5-40:19
 12        android:allowBackup="true"
-12-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:6:9-35
+12-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] C:\Users\edugi\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.8.0] C:\Users\Vespertino\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 14        android:dataExtractionRules="@xml/data_extraction_rules"
-14-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:7:9-65
+14-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:7:9-65
 15        android:debuggable="true"
 16        android:fullBackupContent="@xml/backup_rules"
-16-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:8:9-54
+16-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:8:9-54
 17        android:icon="@mipmap/ic_launcher"
-17-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:9:9-43
+17-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:10:9-41
+18-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:11:9-54
+19-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:12:9-35
+20-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.Prueba23" >
-22-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:13:9-46
+22-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:13:9-46
 23        <activity
-23-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:15:9-24:20
+23-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:15:9-24:20
 24            android:name="com.example.prueba23.MainActivity"
-24-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:16:13-41
+24-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:13-41
 25            android:exported="false"
-25-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:17:13-37
+25-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:13-37
 26            android:theme="@style/Theme.Prueba23.NoActionBar" >
-26-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:18:13-62
+26-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:13-62
 27            <meta-data
-27-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:21:13-23:36
+27-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:13-23:36
 28                android:name="android.app.lib_name"
-28-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:22:17-52
+28-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:22:17-52
 29                android:value="" />
-29-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:23:17-33
+29-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:17-33
 30        </activity>
 31        <activity
-31-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:25:9-39:20
+31-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:25:9-39:20
 32            android:name="com.example.prueba23.ui.login.Login"
-32-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:26:13-43
+32-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:26:13-43
 33            android:exported="true"
-33-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:27:13-36
+33-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:27:13-36
 34            android:label="@string/app_name"
-34-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:28:13-45
+34-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:28:13-45
 35            android:theme="@style/Theme.Prueba23.NoActionBar" >
-35-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:29:13-62
+35-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:29:13-62
 36            <intent-filter>
-36-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:30:13-34:29
+36-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:30:13-34:29
 37                <action android:name="android.intent.action.MAIN" />
-37-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:31:17-69
-37-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:31:25-66
+37-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:31:17-69
+37-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:31:25-66
 38
 39                <category android:name="android.intent.category.LAUNCHER" />
-39-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:33:17-77
-39-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:33:27-74
+39-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:33:17-77
+39-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:33:27-74
 40            </intent-filter>
 41
 42            <meta-data
-42-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:21:13-23:36
+42-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:13-23:36
 43                android:name="android.app.lib_name"
-43-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:22:17-52
+43-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:22:17-52
 44                android:value="" />
-44-->F:\Dual\2\Android\Prueba23\app\src\main\AndroidManifest.xml:23:17-33
+44-->G:\Dual\2\Android\gitProyecto\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:17-33
 45        </activity>
 46
 47        <provider
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 49            android:authorities="com.example.prueba23.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 51            <meta-data
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\edugi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Vespertino\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\edugi\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Vespertino\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\edugi\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Vespertino\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\edugi\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Vespertino\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 57        </provider>
 58
 59        <uses-library
-59-->[androidx.window:window:1.0.0] C:\Users\edugi\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+59-->[androidx.window:window:1.0.0] C:\Users\Vespertino\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 60            android:name="androidx.window.extensions"
-60-->[androidx.window:window:1.0.0] C:\Users\edugi\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+60-->[androidx.window:window:1.0.0] C:\Users\Vespertino\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 61            android:required="false" />
-61-->[androidx.window:window:1.0.0] C:\Users\edugi\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+61-->[androidx.window:window:1.0.0] C:\Users\Vespertino\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 62        <uses-library
-62-->[androidx.window:window:1.0.0] C:\Users\edugi\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+62-->[androidx.window:window:1.0.0] C:\Users\Vespertino\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 63            android:name="androidx.window.sidecar"
-63-->[androidx.window:window:1.0.0] C:\Users\edugi\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+63-->[androidx.window:window:1.0.0] C:\Users\Vespertino\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 64            android:required="false" />
-64-->[androidx.window:window:1.0.0] C:\Users\edugi\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+64-->[androidx.window:window:1.0.0] C:\Users\Vespertino\.gradle\caches\transforms-3\073f10b23065a04cd4c659168bad23fb\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 65    </application>
 66
 67</manifest>
