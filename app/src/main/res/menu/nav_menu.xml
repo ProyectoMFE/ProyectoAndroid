@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    Hay que añadir un id a cada uno y cambiar los textos-->
+    <item android:title="storage">
+        <menu>
+            <item android:title="My Files"
+                    android:icon="@drawable/ic_launcher_foreground" />
+            <item android:title="My Files"
+                android:icon="@drawable/ic_launcher_foreground" />
+            <item android:title="My Files"
+                android:icon="@drawable/ic_launcher_foreground" />
+            <item android:title="My Files"
+                android:icon="@drawable/ic_launcher_foreground" />
+        </menu>
+    </item>
+    <item android:title="storage">
+        <menu>
+            <item android:title="My Files"
+                android:icon="@drawable/ic_launcher_foreground" />
+            <item android:title="My Files"
+                android:icon="@drawable/ic_launcher_foreground" />
+        </menu>
+    </item>
+</menu>
