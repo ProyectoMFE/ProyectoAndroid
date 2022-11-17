@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.proyectodesdecero"
+    package="com.example.prueba23"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,26 +19,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.ProyectoDesdeCero" >
+        android:theme="@style/Theme.Prueba23" >
         <activity
-            android:name="com.example.proyectodesdecero.Equipos"
+            android:name="com.example.prueba23.MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_equipos"
-            android:theme="@style/Theme.ProyectoDesdeCero.NoActionBar" />
+            android:theme="@style/Theme.Prueba23.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name="com.example.proyectodesdecero.MainActivity"
+            android:name="com.example.prueba23.ui.login.Login"
             android:exported="true"
-            android:theme="@style/Theme.ProyectoDesdeCero.NoActionBar" >
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Prueba23.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.proyectodesdecero.androidx-startup"
+            android:authorities="com.example.prueba23.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

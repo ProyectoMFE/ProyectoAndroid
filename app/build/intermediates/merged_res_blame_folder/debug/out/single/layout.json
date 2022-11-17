@@ -1,34 +1,46 @@
 [
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/fragment_slideshow.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/fragment_slideshow.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/fragment_gallery.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/fragment_gallery.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\content_main.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\content_main.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/activity_main.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/activity_main.xml"
+        "merged": "com.example.prueba23.app-mergeDebugResources-42:/layout/fragment_equipos.xml",
+        "source": "com.example.prueba23.app-main-45:/layout/fragment_equipos.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/app_bar_equipos.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/app_bar_equipos.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/content_equipos.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/content_equipos.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\fragment_equipos.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_equipos.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/activity_equipos.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/activity_equipos.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_slideshow.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/fragment_home.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\elementolista.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\elementolista.xml"
     },
     {
-        "merged": "com.example.proyectodesdecero.app-mergeDebugResources-42:/layout/nav_header_equipos.xml",
-        "source": "com.example.proyectodesdecero.app-main-45:/layout/nav_header_equipos.xml"
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-mergeDebugResources-42:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\edugi\\.gradle\\daemon\\7.4\\com.example.prueba23.app-main-45:\\layout\\activity_login.xml"
     }
 ]

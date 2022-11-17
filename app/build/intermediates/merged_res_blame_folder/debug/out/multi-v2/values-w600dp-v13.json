@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.proyectodesdecero.app-mergeDebugResources-41:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.example.prueba23.app-mergeDebugResources-41:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "G:\\Dual\\2\\ProyectoDesdeCero\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "F:\\Dual\\2\\Android\\Prueba23\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

@@ -4,10 +4,12 @@ package com.example.prueba23.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.prueba23.R;
@@ -18,6 +20,12 @@ import java.lang.String;
 public final class FragmentEquiposBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final LinearLayout linearLayout;
+
+  @NonNull
+  public final RecyclerView recyclerView;
 
   @NonNull
   public final TextView textoDispositivos;
@@ -38,10 +46,13 @@ public final class FragmentEquiposBinding implements ViewBinding {
   public final TextView textoModificar;
 
   private FragmentEquiposBinding(@NonNull ConstraintLayout rootView,
+      @NonNull LinearLayout linearLayout, @NonNull RecyclerView recyclerView,
       @NonNull TextView textoDispositivos, @NonNull TextView textoEstado,
       @NonNull TextView textoLocalizacion, @NonNull TextView textoMarca,
       @NonNull TextView textoModelo, @NonNull TextView textoModificar) {
     this.rootView = rootView;
+    this.linearLayout = linearLayout;
+    this.recyclerView = recyclerView;
     this.textoDispositivos = textoDispositivos;
     this.textoEstado = textoEstado;
     this.textoLocalizacion = textoLocalizacion;
@@ -77,6 +88,18 @@ public final class FragmentEquiposBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.linearLayout;
+      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
+        break missingId;
+      }
+
       id = R.id.textoDispositivos;
       TextView textoDispositivos = ViewBindings.findChildViewById(rootView, id);
       if (textoDispositivos == null) {
@@ -113,8 +136,9 @@ public final class FragmentEquiposBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentEquiposBinding((ConstraintLayout) rootView, textoDispositivos, textoEstado,
-          textoLocalizacion, textoMarca, textoModelo, textoModificar);
+      return new FragmentEquiposBinding((ConstraintLayout) rootView, linearLayout, recyclerView,
+          textoDispositivos, textoEstado, textoLocalizacion, textoMarca, textoModelo,
+          textoModificar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

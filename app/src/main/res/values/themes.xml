@@ -18,7 +18,9 @@
         <!-- Customize your theme here. -->
     </style>
 
-
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/botonredondeado</item>
+    </style>
 
     <style name="Theme.Prueba23.NoActionBar">
         <item name="windowActionBar">false</item>
