@@ -3,7 +3,6 @@ package com.example.prueba23.entities;
 public class Dispositivo {
     private String numSerie, marca, modelo, localizacion, estado;
     private int idCategoria;
-    private CaracteristicaDTO caracteristicas;
 
     public Dispositivo() {
         this("", "");
@@ -16,16 +15,6 @@ public class Dispositivo {
         this.localizacion = "";
         this.estado = "D";
         this.idCategoria = 0;
-    }
-
-    public Dispositivo(String numSerie, String modelo, CaracteristicaDTO caracteristicas) {
-        this.numSerie = numSerie;
-        this.marca = "";
-        this.modelo = modelo;
-        this.localizacion = "";
-        this.estado = "D";
-        this.idCategoria = 0;
-        this.caracteristicas = caracteristicas;
     }
 
     public String getNumSerie() {
@@ -74,13 +63,5 @@ public class Dispositivo {
 
     public void setIdCategoria(int idCategoria) {
         this.idCategoria = idCategoria;
-    }
-
-    public CaracteristicaDTO getCaracteristicas() {
-        return caracteristicas;
-    }
-
-    public void setCaracteristicas(CaracteristicaDTO caracteristicas) {
-        this.caracteristicas = caracteristicas;
     }
 }
