@@ -14,7 +14,12 @@
         <item name="android:navigationBarColor">@color/azulComercio</item>
         <item name="drawerArrowStyle">@style/DrawerIcon</item>
 
+
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/botonredondeado</item>
     </style>
 
     <style name="Theme.Prueba23.NoActionBar">
