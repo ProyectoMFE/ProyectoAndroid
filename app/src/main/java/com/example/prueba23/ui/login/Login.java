@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 import com.example.prueba23.MainActivity;
+
 import com.example.prueba23.R;
 import com.example.prueba23.api.ApiClient;
 import com.example.prueba23.api.ApiUsuarios;
@@ -73,6 +74,7 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         Button boton = (Button) view;
+
         ApiUsuarios apiUser = ApiClient.getRetrofit().create(ApiUsuarios.class);
         Call<List<Usuario>> call = apiUser.getUsuarios();
 
