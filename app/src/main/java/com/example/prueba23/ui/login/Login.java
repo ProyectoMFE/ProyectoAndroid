@@ -75,27 +75,6 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
         Button boton = (Button) view;
 
-        ApiUsuarios apiUser = ApiClient.getRetrofit().create(ApiUsuarios.class);
-        Call<List<Usuario>> call = apiUser.getUsuarios();
-
-        call.enqueue(new Callback<List<Usuario>>() {
-            @Override
-            public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
-                List<Usuario> lista = response.body();
-
-
-                if (response.isSuccessful()){
-                    Toast toast = Toast.makeText(getApplicationContext(), lista.get(0
-                    ).getCorreo(), Toast.LENGTH_LONG);
-                    toast.show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Usuario>> call, Throwable t) {
-                System.out.println("no funciona");
-            }
-        });
         guardarSesion(checkGuardarSesion.isChecked());
 
         loginPasado();
