@@ -63,6 +63,22 @@ public class UsuarioManagement {
     public boolean realizarPost(Usuario usuario){
         Call<Usuario> call = api.post(usuario);
 
+        return ejecutar(call);
+    }
+
+    public boolean realizarPut(Usuario usuario){
+        Call<Usuario> call = api.put(usuario.getCorreo(), usuario);
+
+        return ejecutar(call);
+    }
+
+    public boolean realizarDelete(String correo){
+        Call<Usuario> call = api.delete(correo);
+
+        return ejecutar(call);
+    }
+
+    private boolean ejecutar(Call<Usuario> call){
         call.enqueue(new Callback<Usuario>() {
             @Override
             public void onResponse(Call<Usuario> call, Response<Usuario> response) {

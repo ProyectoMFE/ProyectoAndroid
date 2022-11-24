@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.prueba23.MainActivity;
@@ -17,6 +18,7 @@ import com.example.prueba23.R;
 import com.example.prueba23.api.ApiClient;
 import com.example.prueba23.api.ApiUsuarios;
 import com.example.prueba23.entities.Usuario;
+import com.example.prueba23.management.UsuarioManagement;
 import com.example.prueba23.ui.equipos.equipos;
 
 import java.io.Console;
@@ -74,12 +76,16 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         Button boton = (Button) view;
+        TextView usu = findViewById(R.id.inputUsuarios);
+        TextView pass = findViewById(R.id.editTextTextPassword);
+        UsuarioManagement m = new UsuarioManagement();
 
-        guardarSesion(checkGuardarSesion.isChecked());
+        Usuario u = m.realizarGet(usu.getText().toString());
 
-        loginPasado();
-
-
+        if (u.getContrasenia().equals(pass.getText().toString())){
+            guardarSesion(checkGuardarSesion.isChecked());
+            loginPasado();
+        }
     }
 
     public void loginPasado(){
