@@ -14,19 +14,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.prueba23.ui.home.HomeFragment"
+        android:name="com.example.prueba23.ui.Prestamos.PrestamosFragment"
         android:label="Mis Presatamos"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_prestamos" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.prueba23.ui.gallery.GalleryFragment"
+        android:name="com.example.prueba23.ui.Solicitudes.SolicitudesFragment"
         android:label="Solicitudes"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_solicitudes" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.prueba23.ui.slideshow.SlideshowFragment"
+        android:name="com.example.prueba23.ui.Configuracion.ConfiguracionFragment"
         android:label="Configuracion"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_configuracion" />
 </navigation>

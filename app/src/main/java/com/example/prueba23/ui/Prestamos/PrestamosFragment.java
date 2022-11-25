@@ -1,41 +1,39 @@
-package com.example.prueba23.ui.equipos;
+package com.example.prueba23.ui.Prestamos;
 
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.prueba23.R;
-import com.example.prueba23.databinding.FragmentEquiposBinding;
+import com.example.prueba23.databinding.FragmentPrestamosBinding;
 import com.example.prueba23.entities.Dispositivo;
 
 import java.util.ArrayList;
 
+public class PrestamosFragment extends Fragment {
 
-public class equipos extends Fragment {
-
-    FragmentEquiposBinding binding;
+    FragmentPrestamosBinding binding;
 
     // esto es para mostrar lo de las listas
     private RecyclerView mRecyclerView;
-    private adapterEquipos  adapterEquipos;
-
-
+    private adapterPrestamos adapterPrestamos;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+            new ViewModelProvider(this).get(HomeViewModel.class);
 
-        binding = FragmentEquiposBinding.inflate(inflater, container, false);
+        binding = FragmentPrestamosBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        mRecyclerView = root.findViewById(R.id.recyclerView);
+        mRecyclerView = root.findViewById(R.id.recyclerViewPrestamos);
 
         return root;
     }
@@ -67,8 +65,9 @@ public class equipos extends Fragment {
         equipo = new Dispositivo("4","2","3","4","5");
         equipo.setIdCategoria(4);
         listaEquipos.add(equipo);
-         adapterEquipos = new adapterEquipos(this.getContext(), listaEquipos);
-         mRecyclerView.setAdapter(adapterEquipos);
+
+        adapterPrestamos = new adapterPrestamos(this.getContext(),listaEquipos);
+        mRecyclerView.setAdapter(adapterPrestamos);
     }
 
     @Override

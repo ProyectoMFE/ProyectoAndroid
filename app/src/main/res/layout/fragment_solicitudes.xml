@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.equipos.equipos">
+    tools:context=".ui.Solicitudes.SolicitudesFragment">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -63,22 +64,6 @@
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/textoEstado"
-            android:layout_width="54sp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="6dp"
-            android:layout_weight="1"
-            android:autoSizeMaxTextSize="100sp"
-            android:autoSizeMinTextSize="8sp"
-            android:autoSizeStepGranularity="1sp"
-            android:autoSizeTextType="uniform"
-            android:text="Estado"
-            android:textAlignment="center"
-            android:textSize="10sp" />
-
-        <TextView
             android:id="@+id/textoLocalizacion"
             android:layout_width="62sp"
             android:layout_height="wrap_content"
@@ -95,31 +80,29 @@
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/textoModificar"
-            android:layout_width="50sp"
+            android:id="@+id/textoEstado"
+            android:layout_width="54sp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="7dp"
             android:layout_marginTop="44dp"
-            android:layout_marginEnd="19dp"
+            android:layout_marginEnd="6dp"
             android:layout_weight="1"
             android:autoSizeMaxTextSize="100sp"
             android:autoSizeMinTextSize="8sp"
             android:autoSizeStepGranularity="1sp"
             android:autoSizeTextType="uniform"
-            android:text="Modificar"
+            android:text="Estado"
             android:textAlignment="center"
             android:textSize="10sp" />
 
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewSolicitudes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
