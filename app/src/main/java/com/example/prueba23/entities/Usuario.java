@@ -1,8 +1,11 @@
 package com.example.prueba23.entities;
 
+import java.util.List;
+
 public class Usuario {
     private int idUsuario;
     private String correo, nombre, primerApellido, segundoApellido, tipo, contrasenia;
+    private List<Solicitud> solicitudes;
 
     public Usuario() {
         this(Integer.MIN_VALUE, "", "");
@@ -54,9 +57,7 @@ public class Usuario {
         return segundoApellido;
     }
 
-    public void setSegundoApellido(String segundoApellido) {
-        this.segundoApellido = segundoApellido;
-    }
+    public void setSegundoApellido(String segundoApellido) { this.segundoApellido = segundoApellido; }
 
     public String getTipo() {
         return tipo;
@@ -73,4 +74,8 @@ public class Usuario {
     public void setContrasenia(String contrasenia) {
         this.contrasenia = contrasenia;
     }
+
+    public void setSolicitudes(List<Solicitud> solicitudes){ this.solicitudes = solicitudes; }
+
+    public List<Solicitud> getSolicitudes(){ return this.solicitudes; }
 }

@@ -39,7 +39,7 @@ public class UsuarioManagement {
 
         return lista;
     }
-
+/*
     public Usuario realizarGet(String correo){
         Call<List<Usuario>> call = api.get(correo);
 
@@ -57,6 +57,21 @@ public class UsuarioManagement {
                 lista.add(new Usuario());
             }
         });
+
+        return lista.get(0);
+    }*/
+
+    public Usuario realizarGet(String correo){
+        Call<List<Usuario>> call = api.get(correo);
+
+        try {
+            Response<List<Usuario>> res = call.execute();
+
+            lista = res.body();
+        } catch (Exception ex){
+            lista = new ArrayList<>();
+            lista.add(new Usuario());
+        }
 
         return lista.get(0);
     }

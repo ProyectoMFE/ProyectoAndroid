@@ -1,8 +1,14 @@
 package com.example.prueba23.entities;
 
+import java.util.List;
+
 public class Dispositivo {
     private String numSerie, marca, modelo, localizacion, estado;
     private int idCategoria;
+    private List<Solicitud> solicitudes;
+    private HWRed hwRed;
+    private Ordenador ordenadores;
+    private Pantalla pantallas;
 
     public Dispositivo() {
         this("", "");
@@ -71,5 +77,37 @@ public class Dispositivo {
 
     public void setIdCategoria(int idCategoria) {
         this.idCategoria = idCategoria;
+    }
+
+    public List<Solicitud> getSolicitudes() {
+        return solicitudes;
+    }
+
+    public HWRed getHwRed() {
+        return hwRed;
+    }
+
+    public Ordenador getOrdenadores() {
+        return ordenadores;
+    }
+
+    public Pantalla getPantallas() {
+        return pantallas;
+    }
+
+    public void setSolicitudes(List<Solicitud> solicitudes) {
+        this.solicitudes = solicitudes;
+    }
+
+    public void setHwRed(HWRed hwRed) {
+        this.hwRed = hwRed;
+    }
+
+    public void setOrdenadores(Ordenador ordenadores) {
+        this.ordenadores = ordenadores;
+    }
+
+    public void setPantallas(Pantalla pantallas) {
+        this.pantallas = pantallas;
     }
 }
