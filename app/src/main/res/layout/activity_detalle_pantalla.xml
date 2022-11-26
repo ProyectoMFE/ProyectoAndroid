@@ -18,6 +18,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="DuplicateIds" />
@@ -33,6 +34,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/inputEstado" />
 
@@ -47,6 +49,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/inputEstado" />
 
@@ -61,6 +64,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/inputModelo" />
 
@@ -75,6 +79,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/inputMarca"
         tools:ignore="TouchTargetSizeCheck" />
@@ -89,6 +94,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/inputCategoria" />
 
@@ -103,6 +109,7 @@
 
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/inputNSerie"
         tools:ignore="DuplicateIds" />
@@ -186,7 +193,6 @@
         android:text="Pulgadas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
@@ -204,7 +210,19 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/botonReservaDetalles"
+                android:id="@+id/botonAccionCentral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:backgroundTint="@color/white"
+                android:text="Modificar"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/botonAccionDetalles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"

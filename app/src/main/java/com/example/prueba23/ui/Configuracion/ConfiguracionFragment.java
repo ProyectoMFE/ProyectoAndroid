@@ -45,6 +45,7 @@ public class ConfiguracionFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 SesionManagement sessSesionManagement = new SesionManagement(context);
+
                 sessSesionManagement.removeSesion();
 
                 moveToLogin();

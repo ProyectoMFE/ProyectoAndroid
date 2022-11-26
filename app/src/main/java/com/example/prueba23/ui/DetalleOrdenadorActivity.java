@@ -21,13 +21,14 @@ public class DetalleOrdenadorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_ordenador_equipo);
 
         Button botonVolver = findViewById(R.id.botonVolverDetalles);
+        Bundle bundle = getIntent().getExtras();
+
+        String localizacion  = (String) bundle.get("loc");
 
         botonVolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
 
-                String localizacion  = (String) bundle.get("loc");
 
 
 
@@ -44,6 +45,17 @@ public class DetalleOrdenadorActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonAccion = findViewById(R.id.botonAccionDetalles);
+
+
+        if(localizacion.equals("Prestamos")){
+            botonAccion.setText("Devolver");
+        } else if (localizacion.equals("Equipos")){
+            botonAccion.setText("Reservar");
+        }else if (localizacion.equals("Solicitudes")){
+            botonAccion.setVisibility(View.GONE);
+        }
 
         Dispositivo disp = new Dispositivo();
         disp.setEstado("Libre");
@@ -74,6 +86,18 @@ public class DetalleOrdenadorActivity extends AppCompatActivity {
        EditText inputRam = findViewById(R.id.inputVelocidad);
        EditText inputdisco1 = findViewById(R.id.inputDiscoDuro);
        EditText inputdisco2 = findViewById(R.id.inputDiscoDuro2);
+
+
+        inputNSerie.setEnabled(false);
+        inputCategoria.setEnabled(false);
+        inputMarca.setEnabled(false);
+        inputModelo.setEnabled(false);
+        inputEstado.setEnabled(false);
+        inputLocalozacion.setEnabled(false);
+        inputProcesador.setEnabled(false);
+        inputRam.setEnabled(false);
+        inputdisco1.setEnabled(false);
+        inputdisco2.setEnabled(false);
 
        inputNSerie.setText(disp.getNumSerie());
         if(disp.getIdCategoria() == 1){

@@ -109,7 +109,7 @@ public class adapterEquipos extends RecyclerView.Adapter<adapterEquipos.VistaHol
                     Intent intent = new Intent(context, DetalleGeneralActivity.class);
 
                     intent.putExtra("id", equipo.getNumSerie());
-                    intent.putExtra("loc", "Solicitudes");
+                    intent.putExtra("loc", "Equipos");
                     context.startActivity(intent);
                 }
 

@@ -22,13 +22,14 @@ public class DetallePantallaActivity extends AppCompatActivity {
 
 
         Button botonVolver = findViewById(R.id.botonVolverDetalles);
+        Bundle bundle = getIntent().getExtras();
+
+        String localizacion  = (String) bundle.get("loc");
 
         botonVolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
 
-                String localizacion  = (String) bundle.get("loc");
 
 
 
@@ -45,6 +46,17 @@ public class DetallePantallaActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonAccion = findViewById(R.id.botonAccionDetalles);
+
+
+        if(localizacion.equals("Prestamos")){
+            botonAccion.setText("Devolver");
+        } else if (localizacion.equals("Equipos")){
+            botonAccion.setText("Reservar");
+        }else if (localizacion.equals("Solicitudes")){
+            botonAccion.setVisibility(View.GONE);
+        }
 
         Dispositivo disp = new Dispositivo();
         disp.setEstado("Libre");
@@ -72,7 +84,13 @@ public class DetallePantallaActivity extends AppCompatActivity {
 
         EditText inputPulgadas = findViewById(R.id.inputPulgadas);
 
-
+        inputNSerie.setEnabled(false);
+        inputCategoria.setEnabled(false);
+        inputMarca.setEnabled(false);
+        inputModelo.setEnabled(false);
+        inputEstado.setEnabled(false);
+        inputLocalozacion.setEnabled(false);
+        inputPulgadas.setEnabled(false);
         inputNSerie.setText(disp.getNumSerie());
         if(disp.getIdCategoria() == 1){
             inputCategoria.setText("Ordenador");

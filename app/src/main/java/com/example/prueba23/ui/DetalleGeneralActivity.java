@@ -11,7 +11,6 @@ import android.widget.EditText;
 import com.example.prueba23.MainActivity;
 import com.example.prueba23.R;
 import com.example.prueba23.entities.Dispositivo;
-import com.example.prueba23.entities.Ordenador;
 
 public class DetalleGeneralActivity extends AppCompatActivity {
 
@@ -21,29 +20,28 @@ public class DetalleGeneralActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_general);
 
         Button botonVolver = findViewById(R.id.botonVolverDetalles);
+        Bundle bundle = getIntent().getExtras();
 
+
+        String localizacion  = (String) bundle.get("loc");
         botonVolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
 
-                String localizacion  = (String) bundle.get("loc");
-
-
-
-
-                if(localizacion.equals("Prestamos")){
                     Intent intent = new Intent(DetalleGeneralActivity.this, MainActivity.class);
                     startActivity(intent);
-                } else if (localizacion.equals("Equipos")){
-                    Intent intent = new Intent(DetalleGeneralActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }else if (localizacion.equals("Solicitudes")){
-                    Intent intent = new Intent(DetalleGeneralActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }
             }
         });
+        Button botonAccion = findViewById(R.id.botonAccionDetalles);
+
+
+        if(localizacion.equals("Prestamos")){
+            botonAccion.setText("Devolver");
+        } else if (localizacion.equals("Equipos")){
+            botonAccion.setText("Reservar");
+        }else if (localizacion.equals("Solicitudes")){
+           botonAccion.setVisibility(View.GONE);
+        }
 
         Dispositivo disp = new Dispositivo();
         disp.setEstado("Libre");
@@ -65,7 +63,12 @@ public class DetalleGeneralActivity extends AppCompatActivity {
         EditText inputEstado = findViewById(R.id.inputEstado);
         EditText inputLocalozacion = findViewById(R.id.inputLocalizacion);
 
-
+        inputNSerie.setEnabled(false);
+        inputCategoria.setEnabled(false);
+        inputMarca.setEnabled(false);
+        inputModelo.setEnabled(false);
+        inputEstado.setEnabled(false);
+        inputLocalozacion.setEnabled(false);
         inputNSerie.setText(disp.getNumSerie());
         if(disp.getIdCategoria() == 1){
             inputCategoria.setText("Ordenador");
@@ -80,7 +83,6 @@ public class DetalleGeneralActivity extends AppCompatActivity {
         inputModelo.setText(disp.getModelo());
         inputEstado.setText(disp.getEstado());
         inputLocalozacion.setText(disp.getLocalizacion());
-
 
 
 

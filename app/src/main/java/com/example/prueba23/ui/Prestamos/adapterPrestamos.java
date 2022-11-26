@@ -113,7 +113,7 @@ public class adapterPrestamos extends RecyclerView.Adapter<adapterPrestamos.Pres
                     Intent intent = new Intent(context, DetalleGeneralActivity.class);
 
                     intent.putExtra("id", equipo.getNumSerie());
-                    intent.putExtra("loc", "Solicitudes");
+                    intent.putExtra("loc", "Prestamos");
                     context.startActivity(intent);
                 }
 

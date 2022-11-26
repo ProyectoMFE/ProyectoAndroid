@@ -21,7 +21,9 @@ public class DetalleHardRedActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_hard_red_activiry);
 
         Button botonVolver = findViewById(R.id.botonVolverDetalles);
+        Bundle bundle = getIntent().getExtras();
 
+        String localizacion  = (String) bundle.get("loc");
         botonVolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -44,6 +46,17 @@ public class DetalleHardRedActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonAccion = findViewById(R.id.botonAccionDetalles);
+
+
+        if(localizacion.equals("Prestamos")){
+            botonAccion.setText("Devolver");
+        } else if (localizacion.equals("Equipos")){
+            botonAccion.setText("Reservar");
+        }else if (localizacion.equals("Solicitudes")){
+            botonAccion.setVisibility(View.GONE);
+        }
 
         Dispositivo disp = new Dispositivo();
         disp.setEstado("Libre");
@@ -71,8 +84,14 @@ public class DetalleHardRedActivity extends AppCompatActivity {
         EditText inputPuertos = findViewById(R.id.inputPulgadas);
         EditText inputVelocidad = findViewById(R.id.inputVelocidad);
 
-
-
+        inputNSerie.setEnabled(false);
+        inputCategoria.setEnabled(false);
+        inputMarca.setEnabled(false);
+        inputEstado.setEnabled(false);
+        inputLocalozacion.setEnabled(false);
+        inputPuertos.setEnabled(false);
+        inputVelocidad.setEnabled(false);
+        inputModelo.setEnabled(false);
         inputNSerie.setText(disp.getNumSerie());
         if(disp.getIdCategoria() == 1){
             inputCategoria.setText("Ordenador");
