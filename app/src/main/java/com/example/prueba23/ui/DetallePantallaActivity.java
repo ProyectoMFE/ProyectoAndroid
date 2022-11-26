@@ -12,6 +12,7 @@ import com.example.prueba23.MainActivity;
 import com.example.prueba23.R;
 import com.example.prueba23.entities.Dispositivo;
 import com.example.prueba23.entities.Pantalla;
+import com.example.prueba23.management.SesionManagement;
 
 public class DetallePantallaActivity extends AppCompatActivity {
 
@@ -21,8 +22,14 @@ public class DetallePantallaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_pantalla);
 
 
-        Button botonVolver = findViewById(R.id.botonVolverDetalles);
+
         Bundle bundle = getIntent().getExtras();
+
+
+        Button botonVolver = findViewById(R.id.botonVolverDetalles);
+        Button botonCentral = findViewById(R.id.botonAccionCentral);
+        Button botonAccion = findViewById(R.id.botonAccionDetalles);
+
 
         String localizacion  = (String) bundle.get("loc");
 
@@ -47,15 +54,35 @@ public class DetallePantallaActivity extends AppCompatActivity {
             }
         });
 
-        Button botonAccion = findViewById(R.id.botonAccionDetalles);
+
+        SesionManagement sesionManagement = new SesionManagement(getApplicationContext());
+        int usuario = sesionManagement.getSession();
 
 
-        if(localizacion.equals("Prestamos")){
-            botonAccion.setText("Devolver");
-        } else if (localizacion.equals("Equipos")){
-            botonAccion.setText("Reservar");
-        }else if (localizacion.equals("Solicitudes")){
-            botonAccion.setVisibility(View.GONE);
+        if(usuario == 1){
+            if(localizacion.equals("Prestamos")){
+                botonAccion.setVisibility(View.VISIBLE);
+                botonAccion.setText("Devolver");
+            } else if (localizacion.equals("Equipos")){
+                botonAccion.setText("Reservar");
+                botonAccion.setVisibility(View.VISIBLE);
+
+            }else if (localizacion.equals("Solicitudes")){
+                botonAccion.setVisibility(View.GONE);
+            }
+        }else{
+            if(localizacion.equals("Prestamos")){
+                botonAccion.setVisibility(View.GONE);
+                botonAccion.setBackgroundColor(0000);
+                botonCentral.setVisibility(View.GONE);
+            } else if (localizacion.equals("Equipos")){
+                botonAccion.setText("Eliminar");
+                botonCentral.setVisibility(View.VISIBLE);
+            }else if (localizacion.equals("Solicitudes")){
+                botonCentral.setVisibility(View.VISIBLE);
+                botonCentral.setText("Aceptar");
+                botonAccion.setText("Rechazar");
+            }
         }
 
         Dispositivo disp = new Dispositivo();
@@ -75,10 +102,10 @@ public class DetallePantallaActivity extends AppCompatActivity {
     }
 
     protected void RellenarDatos(Dispositivo disp, Pantalla pan){
-        EditText inputNSerie = findViewById(R.id.inputNSerie);
-        EditText inputCategoria = findViewById(R.id.inputCategoria);
-        EditText inputMarca = findViewById(R.id.inputMarca);
-        EditText inputModelo = findViewById(R.id.inputModelo);
+        EditText inputNSerie = findViewById(R.id.inputNombre);
+        EditText inputCategoria = findViewById(R.id.inputCorreo);
+        EditText inputMarca = findViewById(R.id.inputApellido1);
+        EditText inputModelo = findViewById(R.id.inputApellido2);
         EditText inputEstado = findViewById(R.id.inputEstado);
         EditText inputLocalozacion = findViewById(R.id.inputLocalizacion);
 

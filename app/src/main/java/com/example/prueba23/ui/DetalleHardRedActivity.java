@@ -12,6 +12,7 @@ import com.example.prueba23.MainActivity;
 import com.example.prueba23.R;
 import com.example.prueba23.entities.Dispositivo;
 import com.example.prueba23.entities.HWRed;
+import com.example.prueba23.management.SesionManagement;
 
 public class DetalleHardRedActivity extends AppCompatActivity {
 
@@ -20,19 +21,17 @@ public class DetalleHardRedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_hard_red_activiry);
 
-        Button botonVolver = findViewById(R.id.botonVolverDetalles);
+
         Bundle bundle = getIntent().getExtras();
+
+        Button botonVolver = findViewById(R.id.botonVolverDetalles);
+        Button botonCentral = findViewById(R.id.botonAccionCentral);
+        Button botonAccion = findViewById(R.id.botonAccionDetalles);
 
         String localizacion  = (String) bundle.get("loc");
         botonVolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-
-                String localizacion  = (String) bundle.get("loc");
-
-
-
 
                 if(localizacion.equals("Prestamos")){
                     Intent intent = new Intent(DetalleHardRedActivity.this, MainActivity.class);
@@ -44,19 +43,43 @@ public class DetalleHardRedActivity extends AppCompatActivity {
                     Intent intent = new Intent(DetalleHardRedActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
+
             }
         });
 
-        Button botonAccion = findViewById(R.id.botonAccionDetalles);
 
 
-        if(localizacion.equals("Prestamos")){
-            botonAccion.setText("Devolver");
-        } else if (localizacion.equals("Equipos")){
-            botonAccion.setText("Reservar");
-        }else if (localizacion.equals("Solicitudes")){
-            botonAccion.setVisibility(View.GONE);
+
+        SesionManagement sesionManagement = new SesionManagement(getApplicationContext());
+        int usuario = sesionManagement.getSession();
+
+        if(usuario == 1){
+            if(localizacion.equals("Prestamos")){
+                botonAccion.setVisibility(View.VISIBLE);
+                botonAccion.setText("Devolver");
+            } else if (localizacion.equals("Equipos")){
+                botonAccion.setText("Reservar");
+                botonAccion.setVisibility(View.VISIBLE);
+
+            }else if (localizacion.equals("Solicitudes")){
+                botonAccion.setVisibility(View.GONE);
+
+            }
+        }else{
+            if(localizacion.equals("Prestamos")){
+                botonAccion.setVisibility(View.GONE);
+                botonAccion.setBackgroundColor(0000);
+                botonCentral.setVisibility(View.GONE);
+            } else if (localizacion.equals("Equipos")){
+                botonAccion.setText("Eliminar");
+                botonCentral.setVisibility(View.VISIBLE);
+            }else if (localizacion.equals("Solicitudes")){
+                botonCentral.setVisibility(View.VISIBLE);
+                botonCentral.setText("Aceptar");
+                botonAccion.setText("Rechazar");
+            }
         }
+
 
         Dispositivo disp = new Dispositivo();
         disp.setEstado("Libre");
@@ -75,10 +98,10 @@ public class DetalleHardRedActivity extends AppCompatActivity {
     }
 
     protected void RellenarDatos(Dispositivo disp, HWRed red){
-        EditText inputNSerie = findViewById(R.id.inputNSerie);
-        EditText inputCategoria = findViewById(R.id.inputCategoria);
-        EditText inputMarca = findViewById(R.id.inputMarca);
-        EditText inputModelo = findViewById(R.id.inputModelo);
+        EditText inputNSerie = findViewById(R.id.inputNombre);
+        EditText inputCategoria = findViewById(R.id.inputCorreo);
+        EditText inputMarca = findViewById(R.id.inputApellido1);
+        EditText inputModelo = findViewById(R.id.inputApellido2);
         EditText inputEstado = findViewById(R.id.inputEstado);
         EditText inputLocalozacion = findViewById(R.id.inputLocalizacion);
         EditText inputPuertos = findViewById(R.id.inputPulgadas);

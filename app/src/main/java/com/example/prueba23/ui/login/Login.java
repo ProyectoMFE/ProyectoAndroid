@@ -76,7 +76,7 @@ public class Login extends AppCompatActivity {
     public void checkLogin(){
         // comporbar si el usuario esta loggeado
         // si esta loggeado que se dirija a main
-        SesionManagement sesionManagement = new SesionManagement(Login.this);
+        SesionManagement sesionManagement = new SesionManagement(getApplicationContext());
         int userID = sesionManagement.getSession();
 
         if(userID != -1){
@@ -88,34 +88,54 @@ public class Login extends AppCompatActivity {
         // login to app
 
         EditText inputusuario = findViewById(R.id.inputUsuarios);
+
+        String textorecibido = inputusuario.getText().toString();
+        Toast toast1 =Toast.makeText(getApplicationContext(),textorecibido, Toast.LENGTH_SHORT);
+
         Usuario user = new Usuario();
-        if(inputusuario.equals("usuario@usuario.com")){
+        if(textorecibido.equals("usuario@usuario.com")){
             user.setIdUsuario(1);
             user.setNombre("Usuario");
-        }else if(inputusuario.equals("admin@admin.com")) {
+
+            String mensaje = user.getIdUsuario()+"";
+
+
+
+            SesionManagement sessionManagement = new SesionManagement(getApplicationContext());
+            sessionManagement.saveSession(user);
+
+
+
+            moveToMain();
+        }else if(textorecibido.equals("admin@admin.com")) {
+
             user.setIdUsuario(2);
             user.setNombre("admin");
+            String mensaje = user.getIdUsuario()+"";
+
+
+
+            SesionManagement sessionManagement = new SesionManagement(getApplicationContext());
+            sessionManagement.saveSession(user);
+
+
+
+            moveToMain();
         }
 
 
-        Toast toast1 =Toast.makeText(getApplicationContext(),"Bienvenido", Toast.LENGTH_SHORT);
+         toast1 =Toast.makeText(getApplicationContext(),"Usuario o contraseña incorrectos", Toast.LENGTH_SHORT);
 
         toast1.show();
-
-        SesionManagement sessionManagement = new SesionManagement(Login.this);
-        sessionManagement.saveSession(user);
-
-        moveToMain();
-
-
     }
+
+
 
     public void moveToMain(){
 
-
-
         Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
         startActivity(intent);
 
 

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.prueba23.R;
 import com.example.prueba23.databinding.FragmentConfiguracionBinding;
+import com.example.prueba23.entities.Usuario;
 import com.example.prueba23.management.SesionManagement;
 import com.example.prueba23.ui.login.Login;
 
@@ -41,16 +43,54 @@ public class ConfiguracionFragment extends Fragment {
         Button botonCerrarSesion = view.findViewById(R.id.logout_button);
         Context context = this.getContext();
 
+        EditText editTextNombre = view.findViewById(R.id.inputNombre);
+        EditText editTextCorreo = view.findViewById(R.id.inputCorreo);
+        EditText editTextApe1 = view.findViewById(R.id.inputApellido1);
+        EditText editTextApe2 = view.findViewById(R.id.inputApellido2);
+
+        Button botonCategorias = view.findViewById(R.id.botonCategorias);
+        Button botonUsuario = view.findViewById(R.id.botonUsuarios);
         botonCerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SesionManagement sessSesionManagement = new SesionManagement(context);
+                SesionManagement sessSesionManagement = new SesionManagement(context.getApplicationContext());
 
                 sessSesionManagement.removeSesion();
 
                 moveToLogin();
             }
         });
+        SesionManagement sesionManagement = new SesionManagement(context);
+        int usuario = sesionManagement.getSession();
+        Usuario user = new Usuario();
+
+
+        if(usuario == 1){
+            user.setIdUsuario(1);
+            user.setNombre("Usuario");
+            user.setCorreo("usuario@usuario.com");
+            user.setPrimerApellido("usuario");
+            user.setSegundoApellido("usuario2");
+            botonCategorias.setVisibility(View.GONE);
+            botonUsuario.setVisibility(View.GONE);
+        }else{
+            user.setIdUsuario(2);
+            user.setNombre("Admin");
+            user.setCorreo("admin@admin.com");
+            user.setPrimerApellido("Admin");
+            user.setSegundoApellido("Admin2");
+            botonCategorias.setVisibility(View.VISIBLE);
+            botonUsuario.setVisibility(View.VISIBLE);
+        }
+
+
+
+
+
+        editTextNombre.setText(user.getNombre());
+        editTextCorreo.setText(user.getCorreo());
+        editTextApe1.setText(user.getPrimerApellido());
+        editTextApe2.setText(user.getSegundoApellido());
     }
 
 
