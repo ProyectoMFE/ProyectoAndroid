@@ -5,9 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.se.omapi.Session;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+
+import com.example.prueba23.entities.Usuario;
+import com.example.prueba23.management.SesionManagement;
 
 import com.example.prueba23.MainActivity;
 
@@ -15,10 +19,7 @@ import com.example.prueba23.R;
 
 public class Login extends AppCompatActivity {
 
-    CheckBox checkGuardarSesion;
-    SharedPreferences preferences;
-    SharedPreferences.Editor editor;
-    String llave = "sesion";
+
     Button buttonIniciarSesion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,15 @@ public class Login extends AppCompatActivity {
 
         inicializarVariables();
 
+        Button boton = findViewById(R.id.botonLogin);
 
-       // revisarSesion();
+        boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RealizaLogin();
+            }
+        });
+
     }
 
     private void inicializarVariables(){
@@ -39,32 +47,50 @@ public class Login extends AppCompatActivity {
 
         buttonIniciarSesion.setBackgroundColor(0xFFFFFFFF);
 
-        // Esto de abajo es para hacer el login y guardar la sesion.
-       // checkGuardarSesion = (CheckBox) findViewById(R.id.checkboxGuardarSesion);
-        //preferences = this.getPreferences(Context.MODE_PRIVATE);
-        //editor = preferences.edit();
+
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-    private void guardarSesion(boolean checked){
-        editor.putBoolean(llave,checked );
-        editor.apply();
+        checkLogin();
+
+
     }
 
-    private boolean revisarSesion(){
-        boolean sesion = this.preferences.getBoolean(llave, false);
-        return false;
+    public void checkLogin(){
+        // comporbar si el usuario esta loggeado
+        // si esta loggeado que se dirija a main
+        SesionManagement sesionManagement = new SesionManagement(Login.this);
+        int userID = sesionManagement.getSession();
+
+        if(userID != -1){
+            moveToMain();
+        }
     }
 
+    public void RealizaLogin() {
+        // login to app
 
-    public void RealizaLogin(View view) {
+        Usuario user = new Usuario();
+
+        user.setIdUsuario(12);
+        user.setNombre("Eduardo");
+
+        SesionManagement sessionManagement = new SesionManagement(Login.this);
+        sessionManagement.saveSession(user);
+
+        moveToMain();
+
+
+    }
+
+    public void moveToMain(){
         Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-
-    }
-
-    public void loginPasado(){
-        Intent intent = new Intent(this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+
 }
