@@ -43,17 +43,18 @@ public class UsuarioManagement {
     public Usuario realizarGet(String correo){
         Call<List<Usuario>> call = api.get(correo);
 
+        // No entra aquí, aunque falle o no.
         call.enqueue(new Callback<List<Usuario>>() {
             @Override
             public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
-                if (response.isSuccessful()){
-                    lista = response.body();
-                }
+                lista = response.body();
             }
 
             @Override
             public void onFailure(Call<List<Usuario>> call, Throwable t) {
                 lista = new ArrayList<>();
+                t.printStackTrace();
+                lista.add(new Usuario());
             }
         });
 

@@ -74,17 +74,24 @@ public class Login extends AppCompatActivity {
 
     public void RealizaLogin(View view) {
         Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
         Button boton = (Button) view;
         TextView usu = findViewById(R.id.inputUsuarios);
         TextView pass = findViewById(R.id.editTextTextPassword);
+        String correo = usu.getText().toString();
         UsuarioManagement m = new UsuarioManagement();
 
-        Usuario u = m.realizarGet(usu.getText().toString());
+        try {
+            Usuario u = m.realizarGet(correo);
 
-        if (u.getContrasenia().equals(pass.getText().toString())){
-            guardarSesion(checkGuardarSesion.isChecked());
-            loginPasado();
+            if (u.getContrasenia().equals(pass.getText().toString())){
+                guardarSesion(checkGuardarSesion.isChecked());
+                loginPasado();
+                startActivity(intent);
+            }else{
+                Toast.makeText(this, "No se pudo iniciar sesión", Toast.LENGTH_LONG).show();
+            }
+        } catch (Exception e){
+            Toast.makeText(this, "No se pudo conectar con la API", Toast.LENGTH_LONG).show();
         }
     }
 
