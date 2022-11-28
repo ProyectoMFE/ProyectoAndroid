@@ -57,7 +57,9 @@ public class Usuario {
         return segundoApellido;
     }
 
-    public void setSegundoApellido(String segundoApellido) { this.segundoApellido = segundoApellido; }
+    public void setSegundoApellido(String segundoApellido) {
+        this.segundoApellido = segundoApellido;
+    }
 
     public String getTipo() {
         return tipo;
@@ -75,7 +77,11 @@ public class Usuario {
         this.contrasenia = contrasenia;
     }
 
-    public void setSolicitudes(List<Solicitud> solicitudes){ this.solicitudes = solicitudes; }
+    public List<Solicitud> getSolicitudes() {
+        return solicitudes;
+    }
 
-    public List<Solicitud> getSolicitudes(){ return this.solicitudes; }
+    public void setSolicitudes(List<Solicitud> solicitudes) {
+        this.solicitudes = solicitudes;
+    }
 }

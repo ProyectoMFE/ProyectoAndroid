@@ -22,6 +22,7 @@ import com.example.prueba23.management.UsuarioManagement;
 import com.example.prueba23.ui.equipos.equipos;
 
 import java.io.Console;
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -72,7 +73,7 @@ public class Login extends AppCompatActivity {
     }
 
 
-    public void RealizaLogin(View view) {
+    /*public void RealizaLogin(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         Button boton = (Button) view;
         TextView usu = findViewById(R.id.inputUsuarios);
@@ -81,7 +82,7 @@ public class Login extends AppCompatActivity {
         UsuarioManagement m = new UsuarioManagement();
 
         try {
-            Usuario u = m.realizarGet(correo);
+            Usuario u = m.realizarGet().get(0);
 
             if (u.getContrasenia().equals(pass.getText().toString())){
                 guardarSesion(checkGuardarSesion.isChecked());
@@ -93,6 +94,30 @@ public class Login extends AppCompatActivity {
         } catch (Exception e){
             Toast.makeText(this, "No se pudo conectar con la API", Toast.LENGTH_LONG).show();
         }
+    }*/
+
+    public void RealizaLogin(View view) {
+        ApiUsuarios api = ApiClient.getRetrofit().create(ApiUsuarios.class);
+        Call<List<Usuario>> call = api.get();
+        final String[] a = {"alejandro sanz"};
+
+        call.enqueue(new Callback<List<Usuario>>() {
+            @Override
+            public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
+                if (response.isSuccessful()) {
+                    a[0] = response.body().get(0).getCorreo();
+                } else{
+                    a[0] = "odios";
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Usuario>> call, Throwable t) {
+                a[0] = t.getMessage();
+            }
+        });
+
+        Toast.makeText(this, a[0], Toast.LENGTH_LONG).show();
     }
 
     public void loginPasado(){
